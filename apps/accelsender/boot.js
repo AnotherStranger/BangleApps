@@ -21,8 +21,8 @@
      */
     function updateAcceleration(accel) {
         hasData = true;
-        var current_max_raw = accel.mag;
-        var max_raw = max_acceleration.mag;
+        var current_max_raw = accel.diff;
+        var max_raw = max_acceleration.diff;
 
         if (current_max_raw > max_raw) {
             max_acceleration = accel;
